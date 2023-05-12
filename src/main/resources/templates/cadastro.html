@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Cadastro alunos</title>
+</head>
+<body>
+<h1>Cadastro alunos</h1>
+<form method="post" action="/cadastro-alunos">
+  <label for="alunoNome">Nome:</label><br/>
+  <input type="text" id="alunoNome" name="nome"/><br/>
+  <label for="alunoEmail">Email:</label><br/>
+  <input type="text" id="alunoEmail" name="email"/>
+  <input type="submit" value="Salvar"/>
+</form>
+</body>
+</html>

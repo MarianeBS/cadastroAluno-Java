@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Listagem de alunos</title>
+</head>
+<body>
+<a href="/cadastro-alunos">Ir para o cadastro</a>
+<h1>Listagem alunos</h1>
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Email</th>
+  </tr>
+  <tr th:each="aluno : ${listagemAlunos}">
+    <td th:text="${aluno.nome}">Alex Silva</td>
+    <td th:text="${aluno.email}">alex.silva@algaworks.com</td>
+  </tr>
+</table>
+</body>
+</html>

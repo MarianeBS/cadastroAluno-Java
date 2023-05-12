@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Home</title>
+</head>
+<body>
+<a href="/cadastro-alunos">Ir para o cadastro</a>
+<a href="/alunos">Ir para a listagem</a>
+
+<p>Nome do Aluno</p>
+<p th:text="${primeiroAluno.nome}"></p>
+<p th:text="${primeiroAluno.getNome}"></p>
+<p th:text="|Nome: ${primeiroAluno.nome}|"></p>
+
+</body>
+</html>
